@@ -23,3 +23,7 @@ Use vagrant up --provison command
 # 3. Copy dependencies, and install dependencies
 
 # 4. Copy the rest of the files and expose the app port
+
+# Fixed the issues in the docker-compose.yaml files.
+
+# Fixed the bridging issue
