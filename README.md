@@ -13,3 +13,13 @@ Install the docker engine here:
 
 ## How to run the app
 Use vagrant up --provison command
+
+## Explanation on what i did below
+
+# 1. Creation of the Dockerfile and set the working directory
+
+# 2. Minimal base image was Alpine Linux: Known for its small size, Alpine is a great choice for building lightweight Docker images.
+
+# 3. Copy dependencies, and install dependencies
+
+# 4. Copy the rest of the files and expose the app port
