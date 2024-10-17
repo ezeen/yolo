@@ -27,3 +27,5 @@ Use vagrant up --provison command
 # Fixed the issues in the docker-compose.yaml files.
 
 # Fixed the bridging issue
+
+# Updating the docker username and containers names

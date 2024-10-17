@@ -16,3 +16,23 @@ ansible-playbook/
 │       └── vars/
 │           └── main.yml
 └── playbook.yml
+
+yolo
+├── client/
+│   ├── public/
+│   ├── src/
+│   ├── .gitignore
+│   ├── dockerfile
+│   ├── package-lock.json
+│   ├── package.json
+│   └── README.md
+│
+└── backend/
+    ├── models/
+    ├── routes/
+    ├── .gitignore
+    ├── dockerfile
+    ├── package-lock.json
+    ├── package.json
+    └── README.md
+
