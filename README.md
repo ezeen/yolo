@@ -29,3 +29,13 @@ Use vagrant up --provison command
 # Fixed the bridging issue
 
 # Updating the docker username and containers names
+
+# Running docker build -t to build the images on my local machine
+
+# Running docker push to push it to docker hub
+
+# Below are images for the docker hub and local machine 
+
+![Alt text](dockerhub.png)
+
+![Alt text](local.png)
