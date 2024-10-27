@@ -47,3 +47,7 @@ Use vagrant up --provison command
 # Creation of the playbook.yml
 
 # Updating the roles for backend-deployment
+
+# Updating the roles for frontend-deploment
+
+# Setting up Github processes on playbook.yml and nececssary setups to run my application
