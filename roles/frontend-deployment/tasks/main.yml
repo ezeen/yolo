@@ -1,0 +1,16 @@
+---
+- name: Pull frontend image from repository
+  docker_image:
+    name: ekmaigua/elvis-ip2-client:v1.0.0
+    source: pull
+
+- name: Create Node.js Backend Container
+  docker_container:
+    name: elvis-ip2-client
+    image: ekmaigua/elvis-ip2-client:v1.0.0
+    networks:
+      - name: app-net
+    ports:
+      - "3000:3000"
+    command: "npm start"
+  become: yes

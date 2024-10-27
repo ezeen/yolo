@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
         - name: backend
-          image: ekmaigua/elvis-ip2-client:v1.0.0
+          image: ekmaigua/elvis-ip2-backend:v1.0.0
           command: ["npm", "start"] 
           ports:
             - containerPort: 5000
