@@ -39,3 +39,9 @@ Use vagrant up --provison command
 ![Alt text](dockerhub.png)
 
 ![Alt text](local.png)
+
+###### ANSIBLE ASSIGNMENT IP 2 ####################
+
+# Initializing a Vagrantfile and addition of the geerlingguy vagrant box. 
+
+# Creation of the playbook.yml
