@@ -1,4 +1,4 @@
 ---
-container_name: brian-yolo-backend
+container_name: elvis-ip2-backend
 network: app-net
 volume: app-mongo-data/app

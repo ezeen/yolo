@@ -45,3 +45,5 @@ Use vagrant up --provison command
 # Initializing a Vagrantfile and addition of the geerlingguy vagrant box. 
 
 # Creation of the playbook.yml
+
+# Updating the roles for backend-deployment
