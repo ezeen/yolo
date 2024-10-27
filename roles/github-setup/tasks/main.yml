@@ -1,0 +1,9 @@
+---
+- name: Ensure git is installed
+      apt:
+        name: git
+        state: present
+
+- name: Notify user of application access
+      debug:
+        msg: "The application has been deployed! Access it at http://localhost:3000"
