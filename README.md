@@ -69,4 +69,6 @@ Use vagrant up --provison command
 
 # Configure kubectl for the cluster using this script: gcloud container clusters get-credentials ip4-cluster --zone us-central1-a --project ip2-terraform
 
-# Creation of the front-end deployment.yaml file
+# Creation of the front-end deployment.yaml file.
+
+# Use StatefulSets for MongoDB to provide stable network IDs and persistent storage for each database pod. StatefulSets are preferred for stateful applications like databases where persistent storage and stable identity are crucial.
