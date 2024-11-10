@@ -72,3 +72,5 @@ Use vagrant up --provison command
 # Creation of the front-end deployment.yaml file.
 
 # Use StatefulSets for MongoDB to provide stable network IDs and persistent storage for each database pod. StatefulSets are preferred for stateful applications like databases where persistent storage and stable identity are crucial.
+
+# Use LoadBalancer Services to expose the frontend and backend pods to external traffic. This approach provides an IP address to make the frontend accessible to users and allows backend communication with the MongoDB StatefulSet.
