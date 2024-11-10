@@ -76,3 +76,5 @@ Use vagrant up --provison command
 # Use LoadBalancer Services to expose the frontend and backend pods to external traffic. This approach provides an IP address to make the frontend accessible to users and allows backend communication with the MongoDB StatefulSet.
 
 # Creation of the backend-deployment.yaml
+
+# Creating a Storage Class for Google Persisten Disk 
