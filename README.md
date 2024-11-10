@@ -84,3 +84,7 @@ Use vagrant up --provison command
 # Creation of the StatefulSet which will allow MongoDB to retain a unique network identity and persistent storage
 
 # We run kubectl apply -f frontend-deployment.yaml and ubectl apply -f backend-deploymen.yaml to apply them to the GKE cluster
+
+# We run kubectl get pods to make sure the pods are ready and kubectl get services to see if the services are active.
+
+# Here is the URL after successful deployment 34.55.65.11 :3000
