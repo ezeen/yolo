@@ -50,3 +50,16 @@ metadata:
 provisioner: kubernetes.io/gce-pd
 parameters:
   type: pd-standard
+
+---
+apiVersion: v1
+kind: PersistentVolumeClaim
+metadata:
+  name: mongo-pvc
+spec:
+  accessModes:
+    - ReadWriteOnce
+  resources:
+    requests:
+      storage: 10Gi
+  storageClassName: mongo-storage

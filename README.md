@@ -78,3 +78,5 @@ Use vagrant up --provison command
 # Creation of the backend-deployment.yaml
 
 # Creating a Storage Class for Google Persisten Disk 
+
+# Definition of Persistent Volumes and PersistentVolumeClaim for data storage on disk even if pods are terminated, rescheduled or restarted. 
