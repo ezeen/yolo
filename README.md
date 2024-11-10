@@ -51,3 +51,22 @@ Use vagrant up --provison command
 # Updating the roles for frontend-deploment
 
 # Setting up Github processes on playbook.yml and nececssary setups to run my application
+
+##### CONFIGURING TERRAFORM USING GCP ##################
+
+# Branched the project and created the Stage two folder
+
+# Created a prj0ect on GCP AND ADDED THE Compute Engine API
+
+# Adding main.tf after exporting the json file with the key then configuring it ti create a small debian VM instance with Docker pre-installed.
+
+# Terraform initialization and applicarion with GCP project to get public IP and adding it as a host for ansible
+
+
+##### CONFIGURING OF GKE AND KUBERNETES ON IP4 ##################
+
+# Creation and set up of the GKE cluster on google cloud using this script; gcloud container clusters create ip4-cluster --zone us-central1-a --num-nodes=2
+
+# Configure kubectl for the cluster using this script: gcloud container clusters get-credentials ip4-cluster --zone us-central1-a --project ip2-terraform
+
+# Creation of the front-end deployment.yaml file
