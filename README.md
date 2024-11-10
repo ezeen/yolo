@@ -82,3 +82,5 @@ Use vagrant up --provison command
 # Definition of Persistent Volumes and PersistentVolumeClaim for data storage on disk even if pods are terminated, rescheduled or restarted. 
 
 # Creation of the StatefulSet which will allow MongoDB to retain a unique network identity and persistent storage
+
+# We run kubectl apply -f frontend-deployment.yaml and ubectl apply -f backend-deploymen.yaml to apply them to the GKE cluster

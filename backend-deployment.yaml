@@ -32,13 +32,13 @@ spec:
               mountPath: /data/db
   volumeClaimTemplates:
   - metadata:
-      name: mongo-data
+      name: backend-data
     spec:
       accessModes: [ "ReadWriteOnce" ]
       resources:
         requests:
           storage: 10Gi
-      storageClassName: mongo-storage
+      storageClassName: backend-storage
 ---
 apiVersion: v1
 kind: Service
@@ -57,7 +57,7 @@ spec:
 apiVersion: storage.k8s.io/v1
 kind: StorageClass
 metadata:
-  name: mongo-storage
+  name: backend-storage
 provisioner: kubernetes.io/gce-pd
 parameters:
   type: pd-standard
@@ -66,11 +66,11 @@ parameters:
 apiVersion: v1
 kind: PersistentVolumeClaim
 metadata:
-  name: mongo-pvc
+  name: backend-pvc
 spec:
   accessModes:
     - ReadWriteOnce
   resources:
     requests:
       storage: 10Gi
-  storageClassName: mongo-storage
+  storageClassName: backend-storage
