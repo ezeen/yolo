@@ -1,5 +1,5 @@
 apiVersion: apps/v1
-kind: Deployment
+kind: StatefulSet
 metadata:
   name: backend-deployment
   labels:
@@ -27,6 +27,18 @@ spec:
             requests:
               memory: "128Mi"
               cpu: "250m"
+          volumeMounts:
+            - name: mongo-data
+              mountPath: /data/db
+  volumeClaimTemplates:
+  - metadata:
+      name: mongo-data
+    spec:
+      accessModes: [ "ReadWriteOnce" ]
+      resources:
+        requests:
+          storage: 10Gi
+      storageClassName: mongo-storage
 ---
 apiVersion: v1
 kind: Service
@@ -41,7 +53,6 @@ spec:
       port: 5000
       targetPort: 5000
       nodePort: 30100
-
 ---
 apiVersion: storage.k8s.io/v1
 kind: StorageClass
